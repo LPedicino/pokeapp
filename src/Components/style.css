@@ -100,3 +100,26 @@ transition: 0.4s;
 transform: scale(1.05);
 transition: 0.4s;
 }
+
+@media screen and (max-width: 700px)  {
+    
+    .left-content {
+        max-width: 45%;
+    }
+
+    .card {
+        width: 42%;
+    }
+
+    .card h2 {
+        display: none;
+    }
+
+    .right-content {
+        justify-content: flex-end;
+        display: grid;
+        position: static;
+        width: 60%;
+        height: 50%;
+    }
+}
