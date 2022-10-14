@@ -43,7 +43,7 @@ const Main = () => {
             infoPokemon={(poke) => setPokeDex(poke)}
           />
 
-          <div className="btn-group">
+          <div className="btn-page">
             {prevUrl && (
               <button
                 onClick={() => {

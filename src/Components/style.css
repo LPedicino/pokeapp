@@ -95,20 +95,42 @@ transition: 0.4s;
     border-radius: 8px;
 }
 
-.btn-group button:hover {
+.btn-group button:hover, .btn-page button:hover {
     cursor: pointer;
 transform: scale(1.05);
 transition: 0.4s;
 }
 
+.btn-page {
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-page button {
+    outline: none;
+    border: none;
+    height: 50px;
+    width: 180px;
+    padding: 0.3rem 0;
+    margin: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    background-color: #b5051c;
+    border-radius: 8px;
+}
+
+
 @media screen and (max-width: 700px)  {
     
     .left-content {
-        max-width: 45%;
+        width: 50%;
     }
 
     .card {
-        width: 42%;
+        width: 45%;
     }
 
     .card h2 {
@@ -117,9 +139,16 @@ transition: 0.4s;
 
     .right-content {
         justify-content: flex-end;
-        display: grid;
+        display: block;
         position: static;
         width: 60%;
         height: 50%;
+    }
+    .btn-page button {
+        width: 100px;
+    }
+
+    .btn-page {
+        display: grid;
     }
 }
